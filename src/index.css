@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .h1 {
+    @apply text-[67px] font-bold leading-[110%];
+  }
+
+  .h2 {
+    @apply text-[51px] font-bold leading-[110%];
+  }
+
+  .h3 {
+    @apply text-[38px] font-bold leading-[120%];
+  }
+
+  .h4 {
+    @apply text-[28px] font-bold leading-[140%];
+  }
+
+  .h5 {
+    @apply text-[22px] font-bold leading-[160%];
+  }
+
+  .text-body {
+    @apply text-[22px] font-workSans;
+  }
+
+  .text-base {
+    @apply text-[16px] leading-[140%];
+  }
+
+  .text-caption {
+    @apply text-[12px] leading-[110%];
+  }
+
+  .text-button {
+    @apply text-[16px] font-semibold;
+  }
+}
+
+:root {
+  @apply text-[22px] font-workSans bg-background text-text;
+}
+
+section {
+  @apply px-[30px] py-[40px] md:px-[72px] lg:px-[115px] lg:py-[80px];
+}
