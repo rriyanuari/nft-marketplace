@@ -1,4 +1,4 @@
-import Logo from "@/assets/logo/logo.svg";
+import Logo from "@/assets/logo/logo-text.svg";
 import BurgerMenu from "@/assets/icons/burgerMenu.svg";
 
 import Button from "@/components/atom/button";
