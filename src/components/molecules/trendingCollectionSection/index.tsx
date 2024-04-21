@@ -9,7 +9,7 @@ const TrendingCollectionSection = () => {
             Trending Collection
           </h1>
           <p className="text-base lg:text-body">
-            Checkout our weekly updated trending collection.
+            Checkout our weekly updated trending collection
           </p>
         </div>
 

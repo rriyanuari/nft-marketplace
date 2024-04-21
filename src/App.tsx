@@ -3,6 +3,8 @@ import Navigation from "@/components/molecules/navigation";
 import TrendingCollectionSection from "./components/molecules/trendingCollectionSection";
 import TopCreatorSection from "./components/molecules/topCreatorSection";
 import BrowseCategoriesSection from "./components/molecules/browseCategoriesSection";
+import DiscoverMoreSection from "./components/molecules/discoverMoreSection";
+import HowItWorkSection from "./components/molecules/howItWorkSection";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <TrendingCollectionSection />
         <TopCreatorSection />
         <BrowseCategoriesSection />
+        <DiscoverMoreSection />
+        <HowItWorkSection />
       </div>
     </div>
   );

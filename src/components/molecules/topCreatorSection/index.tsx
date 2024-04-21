@@ -13,7 +13,7 @@ const TopCreatorSection = () => {
             </p>
           </div>
           <Button
-            variant="filled"
+            variant="outline"
             size="primary"
             className="hidden lg:block w-full md:w-[224px]"
           >
