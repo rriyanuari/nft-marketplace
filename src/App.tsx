@@ -10,19 +10,21 @@ import Footer from "./components/molecules/footer";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="container">
-        <Navigation />
-        <HeroSection />
-        <TrendingCollectionSection />
-        <TopCreatorSection />
-        <BrowseCategoriesSection />
-        <DiscoverMoreSection />
-        <HowItWorkSection />
-        <SubscribeWidgetSection />
-        <Footer />
+    <>
+      <div className="flex flex-col items-center justify-center">
+        <div className="container">
+          <Navigation />
+          <HeroSection />
+          <TrendingCollectionSection />
+          <TopCreatorSection />
+          <BrowseCategoriesSection />
+          <DiscoverMoreSection />
+          <HowItWorkSection />
+          <SubscribeWidgetSection />
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
