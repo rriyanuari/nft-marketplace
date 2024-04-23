@@ -5,6 +5,8 @@ import TopCreatorSection from "./components/molecules/topCreatorSection";
 import BrowseCategoriesSection from "./components/molecules/browseCategoriesSection";
 import DiscoverMoreSection from "./components/molecules/discoverMoreSection";
 import HowItWorkSection from "./components/molecules/howItWorkSection";
+import SubscribeWidgetSection from "./components/molecules/subscribeWidgetSection";
+import Footer from "./components/molecules/footer";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <BrowseCategoriesSection />
         <DiscoverMoreSection />
         <HowItWorkSection />
+        <SubscribeWidgetSection />
+        <Footer />
       </div>
     </div>
   );

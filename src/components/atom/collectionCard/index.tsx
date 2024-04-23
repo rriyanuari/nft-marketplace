@@ -5,7 +5,7 @@ const CollectionCard = () => {
         <img
           src="./assets/collections/collection1.jpg"
           alt="NFT collection"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-[20px]"
         />
       </div>
       <div className="grid grid-cols-3 gap-[15px]">

@@ -5,7 +5,7 @@ const HighlightedNFT = () => {
         <img
           src="./assets/collections/collection1.jpg"
           alt="NFT collection"
-          className="w-full object-cover"
+          className="w-full object-cover rounded-t-[20px]"
         />
       </div>
       <div className="bg-backgroundSecondary p-[20px] rounded-b-[20px]">

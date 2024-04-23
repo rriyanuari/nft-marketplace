@@ -8,6 +8,7 @@ export default {
         backgroundSecondary: "#3B3B3B",
         captionText: "#858584",
         text: "#FFFFFF",
+        textSecondary: "#CCCCCC",
         callToAction: "#A259FF",
         blueAccent: "#377DF7",
         redAccent: "#FF7262",
