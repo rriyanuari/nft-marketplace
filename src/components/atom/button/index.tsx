@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface ButtonProps {
   size: "primary" | "secondary" | "tertiary";
   variant: "filled" | "outline";
@@ -9,13 +11,15 @@ const Button = (props: ButtonProps) => {
   const { children, variant, className } = props;
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 0.9 }}
+      whileTap={{ scale: 0.5 }}
       className={`text-button h-[60px] px-[50px] rounded-[20px] ${
         variant == "filled" ? "bg-callToAction" : "border-2 border-callToAction"
       } ${className}`}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
 
