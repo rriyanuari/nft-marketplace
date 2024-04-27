@@ -1,9 +1,13 @@
-const CollectionCard = () => {
+import { TtrendingCollection } from "@/types/trendingCollection";
+
+const CollectionCard = (props: { collection: TtrendingCollection }) => {
+  const { collection } = props;
+
   return (
     <div className="w-full flex flex-col gap-[15px]">
       <div className="rounded-[20px] h-[330px] overflow-hidden">
         <img
-          src="./assets/collections/collection1.jpg"
+          src={`./assets/collections/${collection.img}`}
           alt="NFT collection"
           className="w-full h-full object-cover rounded-[20px]"
         />
@@ -11,14 +15,14 @@ const CollectionCard = () => {
       <div className="grid grid-cols-3 gap-[15px]">
         <div className="rounded-[20px] h-[100px] overflow-hidden">
           <img
-            src="./assets/collections/collection1.jpg"
+            src={`./assets/collections/${collection.img}`}
             alt="NFT collection"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="rounded-[20px] h-[100px] overflow-hidden">
           <img
-            src="./assets/collections/collection1.jpg"
+            src={`./assets/collections/${collection.img}`}
             alt="NFT collection"
             className="w-full h-full object-cover"
           />
@@ -29,14 +33,14 @@ const CollectionCard = () => {
       </div>
 
       <div>
-        <p className="h5">DSGN Animals</p>
+        <p className="h5">{collection.title}</p>
         <div className="flex items-center gap-2">
           <img
-            src="./assets/collections/collection1.jpg"
+            src={`./assets/creators/${collection.creator.img}`}
             alt="NFT collection"
             className="h-[24px] w-[24px] object-cover rounded-full"
           />
-          <p className="text-base">Animakid</p>
+          <p className="text-base">{collection.creator.name}</p>
         </div>
       </div>
     </div>

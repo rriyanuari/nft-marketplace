@@ -1,6 +1,8 @@
 import NFTCard from "@/components/atom/NFTCard";
 import Button from "@/components/atom/button";
 
+import DATA_NFT from "@/data/NFTs.json";
+
 const DiscoverMoreSection = () => {
   return (
     <section>
@@ -22,9 +24,9 @@ const DiscoverMoreSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          <NFTCard />
-          <NFTCard />
-          <NFTCard />
+          {DATA_NFT.map((item) => (
+            <NFTCard nft={item} key={item.title} />
+          ))}
         </div>
       </div>
     </section>

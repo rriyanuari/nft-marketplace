@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Art",
+    "img": "Art.jpg"
+  },
+  {
+    "title": "Collectibles",
+    "img": "Collectibles.jpg"
+  },
+  {
+    "title": "Music",
+    "img": "Music.jpg"
+  },
+  {
+    "title": "Photography",
+    "img": "Photography.jpg"
+  },
+  {
+    "title": "Video",
+    "img": "Video.jpg"
+  },
+  {
+    "title": "Utility",
+    "img": "Utility.jpg"
+  },
+  {
+    "title": "Sport",
+    "img": "Sport.jpg"
+  },
+  {
+    "title": "Virtual Worlds",
+    "img": "Virtual-Worlds.jpg"
+  }
+]

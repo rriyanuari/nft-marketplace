@@ -1,0 +1,29 @@
+[
+  {
+    "title": "DSGN Animals",
+    "img": "collection2.jpg",
+    "creator": {
+      "name": "Keepitreal",
+      "img": "Keepitreal.jpg",
+      "totalSales": "34.53"
+    }
+  },
+  {
+    "title": "Magic Mushrooms",
+    "img": "collection3.jpg",
+    "creator": {
+      "name": "GravityOne",
+      "img": "GravityOne.jpg",
+      "totalSales": "34.53"
+    }
+  },
+  {
+    "title": "Disco Machines",
+    "img": "collection4.jpg",
+    "creator": {
+      "name": "RustyRobot",
+      "img": "RustyRobot.jpg",
+      "totalSales": "34.53"
+    }
+  }
+]

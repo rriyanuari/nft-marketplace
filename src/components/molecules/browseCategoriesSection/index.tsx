@@ -1,5 +1,7 @@
 import CategoryCard from "@/components/atom/categoryCard";
 
+import DATA_Categories from "@/data/categories.json";
+
 const BrowseCategoriesSection = () => {
   return (
     <section>
@@ -13,8 +15,8 @@ const BrowseCategoriesSection = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-[30px]">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map(() => (
-            <CategoryCard />
+          {DATA_Categories.map((item) => (
+            <CategoryCard category={item} key={item.title} />
           ))}
         </div>
       </div>

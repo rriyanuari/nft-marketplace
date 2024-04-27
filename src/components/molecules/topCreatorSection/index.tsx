@@ -1,6 +1,8 @@
 import ArtistCard from "@/components/atom/artistCard";
 import Button from "@/components/atom/button";
 
+import DATA_Creators from "@/data/creators.json";
+
 const TopCreatorSection = () => {
   return (
     <section>
@@ -22,8 +24,8 @@ const TopCreatorSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map(() => (
-            <ArtistCard />
+          {DATA_Creators.map((item) => (
+            <ArtistCard creator={item} key={item.name} />
           ))}
         </div>
 

@@ -1,5 +1,7 @@
 import CollectionCard from "@/components/atom/collectionCard";
 
+import DATA_Trendings from "@/data/trendingCollections.json";
+
 const TrendingCollectionSection = () => {
   return (
     <section>
@@ -14,9 +16,9 @@ const TrendingCollectionSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
+          {DATA_Trendings.map((item) => (
+            <CollectionCard collection={item} key={item.title} />
+          ))}
         </div>
       </div>
     </section>

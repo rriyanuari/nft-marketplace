@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Distant Galaxy",
+    "img": "Distant-Galaxy.jpg",
+    "creator": {
+      "name": "Juanie",
+      "img": "Juanie.jpg",
+      "totalSales": "34.53"
+    }
+  },
+  {
+    "title": "Life On Edena",
+    "img": "Life-On-Edena.jpg",
+    "creator": {
+      "name": "DigiLab",
+      "img": "DigiLab.jpg",
+      "totalSales": "34.53"
+    }
+  },
+  {
+    "title": "AstroFiction",
+    "img": "AstroFiction.jpg",
+    "creator": {
+      "name": "Keepitreal",
+      "img": "Keepitreal.jpg",
+      "totalSales": "34.53"
+    }
+  }
+]

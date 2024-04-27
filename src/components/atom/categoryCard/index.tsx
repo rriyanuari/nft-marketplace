@@ -1,11 +1,14 @@
 import paintBrush from "@/assets/icons/categories/PaintBrush.svg";
+import { Tcategories } from "@/types/categories";
 
-const CategoryCard = () => {
+const CategoryCard = (props: { category: Tcategories }) => {
+  const { category } = props;
+
   return (
     <div className="w-full">
       <div className="relative w-full rounded-t-[20px] overflow-hidden">
         <img
-          src="./assets/categories/category1.jpg"
+          src={`./assets/categories/${category.img}`}
           alt="NFT category"
           className="w-full object-cover relative"
         />
@@ -14,7 +17,9 @@ const CategoryCard = () => {
         </div>
       </div>
       <div className="bg-backgroundSecondary p-[20px] lg:px-[30px] rounded-b-[20px]">
-        <p className="text-button md:h5 font-workSans mb-[10px]">Category</p>
+        <p className="text-button md:h5 font-workSans mb-[10px]">
+          {category.title}
+        </p>
       </div>
     </div>
   );
