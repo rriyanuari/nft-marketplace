@@ -26,34 +26,15 @@ const TopCreatorSection = () => {
         </div>
 
         <motion.div
+          initial={{ opacity: 0 }}
           whileInView={{
+            opacity: 1,
             transition: { staggerChildren: 0.05 },
           }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]"
         >
-          {DATA_Creators.map((item) => (
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, scale: 0.5 },
-                visible: { opacity: 1, scale: [0.8, 1.3, 1] },
-              }}
-              initial={{
-                opacity: 0,
-                // if odd index card,slide from right instead of left
-                scale: 0.5,
-              }}
-              whileInView={{
-                opacity: 1,
-                scale: [0.8, 1.3, 1],
-                transition: {
-                  duration: 2, // Animation duration
-                  type: "spring",
-                },
-              }}
-              viewport={{ once: false }}
-            >
-              <ArtistCard creator={item} key={item.name} />
-            </motion.div>
+          {DATA_Creators.map((item, index) => (
+            <ArtistCard creator={item} index={index + 1} key={item.name} />
           ))}
         </motion.div>
 
