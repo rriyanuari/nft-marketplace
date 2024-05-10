@@ -1,5 +1,6 @@
 import Logo from "@/assets/logo/logo-text.svg";
 import SubscribeForm from "@/components/atom/subscribeForm";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <section className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-[31px] text-textSecondary">
           <div className="w-full lg:pr-[84px] lg:w-1/3">
-            <img
+            <LazyLoadImage
               src={Logo}
               alt="nft marketplace's logo"
               className="lg:h-[32px] mb-[30px]"

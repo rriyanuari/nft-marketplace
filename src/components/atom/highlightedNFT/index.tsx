@@ -1,8 +1,10 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const HighlightedNFT = () => {
   return (
     <div className="w-full">
       <div className="rounded-t-[20px] overflow-hidden">
-        <img
+        <LazyLoadImage
           src="./assets/collections/collection1.jpg"
           alt="NFT collection"
           className="w-full object-cover rounded-t-[20px]"
@@ -11,7 +13,7 @@ const HighlightedNFT = () => {
       <div className="bg-backgroundSecondary p-[20px] rounded-b-[20px]">
         <h5 className="font-workSans mb-[10px]">Space Walking</h5>
         <div className="flex items-center gap-2">
-          <img
+          <LazyLoadImage
             src="./assets/collections/collection1.jpg"
             alt="NFT collection"
             className="h-[24px] w-[24px] object-cover rounded-full"

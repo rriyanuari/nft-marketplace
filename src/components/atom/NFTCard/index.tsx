@@ -1,4 +1,5 @@
 import { TtrendingCollection } from "@/types/trendingCollection";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const NFTCard = (props: { nft: TtrendingCollection }) => {
   const { nft } = props;
@@ -6,7 +7,7 @@ const NFTCard = (props: { nft: TtrendingCollection }) => {
   return (
     <div className="w-full">
       <div className="rounded-t-[20px] overflow-hidden">
-        <img
+        <LazyLoadImage
           src={`./assets/NFTs/${nft.img}`}
           alt="NFT collection"
           className="w-full object-cover"
@@ -15,7 +16,7 @@ const NFTCard = (props: { nft: TtrendingCollection }) => {
       <div className="bg-backgroundSecondary p-[20px] lg:px-[30px] rounded-b-[20px]">
         <h5 className="font-workSans mb-[10px]">{nft.title}</h5>
         <div className="flex items-center gap-2">
-          <img
+          <LazyLoadImage
             src={`./assets/creators/${nft.creator.img}`}
             alt="NFT collection"
             className="h-[24px] w-[24px] object-cover rounded-full"

@@ -1,4 +1,5 @@
 import SubscribeForm from "@/components/atom/subscribeForm";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SubscribeWidgetSection = () => {
   return (
@@ -6,7 +7,7 @@ const SubscribeWidgetSection = () => {
       <div className="flex items-center justify-center">
         <div className="bg-backgroundSecondary rounded-[20px] px-[30px] py-[40px] xl:p-[60px]">
           <div className="flex flex-col md:flex-row items-center gap-[30px] xl:gap-[80px]">
-            <img
+            <LazyLoadImage
               src="./assets/collections/collection1.jpg"
               alt="NFT collection"
               className="w-[315px] h-[255px] md:w-[300px] md:h-[280px] xl:w-[425px] xl:h-[310px] object-cover rounded-[20px]"

@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import { Tcreator } from "@/types/creator";
 
@@ -7,14 +8,10 @@ const ArtistCard = (props: { creator: Tcreator; index: number }) => {
   return (
     <motion.button
       whileHover={{ scale: 0.9 }}
-      whileTap={{ scale: 0.6 }}
-      initial={{
-        opacity: 0,
-        // if odd index card,slide from right instead of left
-      }}
+      whileTap={{ scale: 0.8 }}
       whileInView={{
         opacity: 1,
-        scale: [0.8, 1.3, 1],
+        scale: [0.9, 1.3, 1],
         transition: {
           type: "spring",
         },
@@ -25,7 +22,7 @@ const ArtistCard = (props: { creator: Tcreator; index: number }) => {
       <div className="absolute top-[15px] left-[15px] w-[30px] h-[30px] rounded-full bg-background text-captionText text-base flex justify-center items-center">
         {index}
       </div>
-      <img
+      <LazyLoadImage
         src={`./assets/creators/${creator.img}`}
         alt="NFT collection"
         className="h-[60px] w-[60px] lg:h-[120px] lg:w-[120px] object-cover rounded-full"

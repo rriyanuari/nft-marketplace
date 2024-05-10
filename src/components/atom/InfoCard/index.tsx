@@ -1,9 +1,10 @@
 import imgCart from "@/assets/infoCard/cart.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const InfoCard = () => {
   return (
     <div className="w-full bg-backgroundSecondary py-0 p-[20px] md:py-[10px] lg:py-[20px] lg:px-[30px] rounded-[20px] flex md:flex-col items-center gap-[20px]">
-      <img
+      <LazyLoadImage
         src={imgCart}
         alt="img-cart"
         className="h-[100px] w-[100px] md:h-[160px] md:w-[160px] lg:h-[250px] lg:w-[250px] object-cover"

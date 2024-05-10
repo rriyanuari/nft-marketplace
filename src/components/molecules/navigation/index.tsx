@@ -2,6 +2,7 @@ import Logo from "@/assets/logo/logo-text.svg";
 import BurgerMenu from "@/assets/icons/burgerMenu.svg";
 
 import Button from "@/components/atom/button";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MENU = [
   {
@@ -22,13 +23,13 @@ const Navigation = () => {
   return (
     <>
       <div className="flex items-center justify-between px-[30px] lg:px-[50px] py-[30px]">
-        <img
+        <LazyLoadImage
           src={Logo}
           alt="nft marketplace's logo"
           className="h-[24px] lg:h-[32px]"
         />
 
-        <img
+        <LazyLoadImage
           src={BurgerMenu}
           alt="burger menu"
           className="lg:hidden h-[24px]"
